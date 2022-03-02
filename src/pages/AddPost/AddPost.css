@@ -1,0 +1,101 @@
+.create-form {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .page-title {
+    font-size: 28px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+  }
+
+  .create-form label {
+    display: block;
+    margin: 16px auto;
+  }
+  .create-form label span {
+    display: block;
+    margin-bottom: 8px;
+    text-align: start;
+    left:0;
+  }
+  .create-form input, textarea {
+    padding: 8px 6px;
+    font-size: 1em;
+    color: #777;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .create-form textarea {
+    min-height: 140px;
+  }
+
+  .date input{
+      padding: 10px 8px;
+      width: 120%;
+      display: inline;
+      align-items: start;
+
+  }
+
+  .set1{
+    display: flex;
+  }
+
+  .set1 .date{
+    margin-left: 0;
+  }
+
+  .set1 .select .select_div {
+    width: auto;
+    margin-left: 0px;
+}
+
+form{
+    width: 100%;
+}
+
+.create-form .a-btn{
+    box-sizing: border-box;
+    margin:10px auto;
+    padding: 10px 35px;
+    font-size: 18px;
+    display: block;
+}   
+
+/* input type file */
+.custom-file-input {
+    color: transparent;
+  }
+  .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'Select some files';
+    color: black;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 500;
+    font-size: 10pt;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active {
+    outline: 0;
+  }
+ 
+

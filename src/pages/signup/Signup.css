@@ -1,0 +1,16 @@
+.auth-form{
+    background-color: #cafa94;
+    position: relative;
+    height: auto;
+    max-width: 350px;
+    margin: 110px auto;
+    border-radius: 20px;
+    height: 75vh;
+    text-align: center;
+}
+
+.auth-form h2{
+    position: relative;
+    top:17px;
+    margin-bottom: 36px;
+}

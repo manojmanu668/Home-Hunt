@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+.sidebar{
+    left: 0;
+    top: 0;
+    background: #a5fa44;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    padding: 6px 14px;
+    margin-right: 40px;
+}
+
+.sidebar ul{
+    list-style: none;
+    text-align: start;
+    padding-inline-start: 5px;
+}
+
+
+.sidebar ul li {
+    margin: 10px auto;
+    padding: 8px 10px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.sidebar ul li a{
+    color: #fff;
+}
+
+.nav_list{
+    margin-top: -3px;
+}
+
+.nav_list li:hover {
+    color: #b0ff56;
+    background-color: #fff;
+}
+
+.nav_list li:hover a{
+    color: #b0ff56;
+    background-color: #fff;
+}
+
+.nav_list .icon{
+    position: relative;
+    top: 3px;
+}
+
+.links_name{
+    margin-left: 15px;
+}
+
+.side_logo{
+    margin-left: -5px;
+    margin-top: 24px;
+}
+
+.side_logo .logo{
+    font-size: 25px;
+    color: black;
+    position: relative;
+    margin-right: 15px;
+}
+
+.side_logo .logo-name{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.side_logo .l-name{
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-weight:700; 
+    position: relative;
+
+}
+
+.sidebar .profile_content{
+    position: absolute;
+    color: black;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #c5ff83;
+    height: 70px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+.sidebar .profile_content .profile{
+    position: relative;
+    padding: 10px 6px;
+    height: 70px;
+    margin-bottom: 0px;
+    background: none;
+    transition: all 0.4s ease;
+    display: block;
+    align-items: center;
+}  
+
+.sidebar .profile_content .profile .profile_details{
+    display: flex;
+    align-items: center;
+}
+
+
+.profile .profile_details img {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-left: 8px;
+}
+
+.profile .profile_details .name_job{
+    margin-left: 13px;
+}
+
+.profile .profile_details .name{
+    font-size: 21px;
+    font-weight: 400;
+    margin-left: 6px;
+}
+
+.profile .profile_details .job{
+    font-size: 12px;
+}
+
+.profile #logout{
+    position: absolute;
+    right: 3%;
+    bottom: 39%;
+    min-width: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    background: #c5ff83;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    color: rgb(32, 32, 32);
+}
+
+
+

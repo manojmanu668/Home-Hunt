@@ -1,0 +1,8 @@
+body :not(#unblurred){
+    filter: blur(2px);    
+}
+.unblurred .box {
+    background:yellow; 
+    border:2px solid black; 
+    filter: blur(0px);
+}
