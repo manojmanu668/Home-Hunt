@@ -6,7 +6,7 @@ import { useCollection } from '../hooks/useCollection'
 function Saved() {
     const { id } = useParams()
     const { documents, error } = useCollection(['users',`${id}`, 'saved'],'',['createdAt', 'desc'])
-    console.log('saved posts',documents)
+    // console.log('saved posts',documents)
     
     return (
         <div>

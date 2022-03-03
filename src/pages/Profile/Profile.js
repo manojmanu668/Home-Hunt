@@ -28,7 +28,7 @@ function Profile() {
 
     useEffect(() => {
         {documents && documents.map( (doc) => (
-            user.uid === doc.createdBy.id ? setCount(prevCount => prevCount + 1): ''
+            document.id === doc.createdBy.id && doc.isActive ? setCount(prevCount => prevCount + 1): ''
             ))}
         return ()=>setCount(0)
     }, [documents])
@@ -37,7 +37,7 @@ function Profile() {
     // console.log(documents.length)
 
     return (
-        <>{!update ? 
+        <>{!update && document && user.uid === document.id ? 
             <div className="edit-butt" onClick={updateHandler}>
                 <AiFillEdit/><span>Edit</span>
             </div>

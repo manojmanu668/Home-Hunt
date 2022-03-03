@@ -9,6 +9,7 @@ import Sidebar from './components/Sidebar';
 import Profile from './pages/Profile/Profile' 
 import AddPost from './pages/AddPost/AddPost';
 import Chats from './pages/Chats/Chats';
+import ChatUser from './pages/Chats/ChatUser';
 import OnlineUsers from './components/OnlineUsers';
 import Saved from './components/Saved'
 
@@ -28,7 +29,9 @@ function App() {
           <Route path='/signup' element={!user ? <Signup/> : <Navigate to="/"/>}/>
           <Route path='/profile/:id' element={!user ? <Navigate to="/login"/> : <Profile /> }/>
           <Route path='/addpost' element={!user ? <Navigate to="/login"/> : <AddPost /> }/>
-          <Route path='/chats/*' element={!user ? <Navigate to="/login"/> : <Chats /> }/>
+          <Route path='/chats' element={!user ? <Navigate to="/login"/> : <Chats /> }>
+            <Route path=":id" element={<ChatUser />} />
+          </Route>
           <Route path='/saved/:id' element={!user ? <Navigate to="/login"/> : <Saved /> }/>
         </Routes>
         </div>

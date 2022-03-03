@@ -37,7 +37,7 @@ function Sidebar() {
                     </Link>
                 </li>
                 <li>
-                    <Link to={`/chats/${user.uid}`}>
+                    <Link to={`/chats`}>
                         <span className="icon"><BsChatSquareText /></span>
                         <span className="links_name">Chats</span>
                     </Link>
